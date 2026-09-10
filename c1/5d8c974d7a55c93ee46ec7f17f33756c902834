@@ -1,0 +1,19 @@
+config.js
+  s_4033f99e4559e9::t_2698cb0726a88b 5
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "c15d8c974d7a55c93ee46ec7f17f33756c902834",
+  "prompts": {},
+  "sessions": {
+    "s_4033f99e4559e9": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a04c7f-42b1-7852-bf60-c5c17139c2b5",
+        "model": "gpt-5.6-luna"
+      },
+      "human_author": "Carlos Cáceres González <carlos.caceres@glovoapp.com>"
+    }
+  }
+}
