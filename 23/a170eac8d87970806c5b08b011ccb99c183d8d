@@ -1,0 +1,33 @@
+index.html
+  s_3b1df3c82ee5b6::t_2c10cda1e4563a 6,8-43,54,94,123
+purchase.html
+  s_3b1df3c82ee5b6::t_7503932f59f62a 8,14,20
+sitemap.xml
+  s_3b1df3c82ee5b6::t_2c10cda1e4563a 1-27
+guide.html
+  s_3b1df3c82ee5b6::t_2c10cda1e4563a 1-91
+robots.txt
+  s_3b1df3c82ee5b6::t_2c10cda1e4563a 1-4
+privacy.html
+  s_3b1df3c82ee5b6::t_8d2024ceb7b11c 8,14,26
+support.html
+  s_3b1df3c82ee5b6::t_c52820bc9e1a56 8,14,20
+refunds.html
+  s_3b1df3c82ee5b6::t_037a9bce7d6161 8,14,22
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "23a170eac8d87970806c5b08b011ccb99c183d8d",
+  "prompts": {},
+  "sessions": {
+    "s_3b1df3c82ee5b6": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a0a3ce-3399-77a3-a759-a4a7d4a15787",
+        "model": "gpt-5.6-luna"
+      },
+      "human_author": "Carlos Cáceres González <carlos.caceres@glovoapp.com>"
+    }
+  }
+}
