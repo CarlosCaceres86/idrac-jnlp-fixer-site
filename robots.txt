@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://carloscaceres86.github.io/idrac-jnlp-fixer-site/sitemap.xml

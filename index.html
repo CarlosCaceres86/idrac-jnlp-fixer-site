@@ -3,9 +3,44 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="A tiny Manifest V3 extension that fixes legacy Dell iDRAC JNLP download filenames locally.">
+    <meta name="description" content="Fix viewer.jnlp(...) downloads from legacy Dell iDRAC6, iDRAC7 and iDRAC8 consoles in Chrome, Edge and Brave. Filename-only, local and private.">
     <meta name="theme-color" content="#0f172a">
-    <title>iDRAC JNLP Fixer — Legacy download renamer</title>
+    <link rel="canonical" href="https://carloscaceres86.github.io/idrac-jnlp-fixer-site/">
+    <meta property="og:locale" content="en_GB">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Fix viewer.jnlp(...) Downloads | iDRAC JNLP Fixer">
+    <meta property="og:description" content="Rename legacy Dell iDRAC JNLP downloads to a usable filename in Chromium browsers. The extension changes the filename locally and leaves file contents alone.">
+    <meta property="og:url" content="https://carloscaceres86.github.io/idrac-jnlp-fixer-site/">
+    <meta property="og:image" content="https://carloscaceres86.github.io/idrac-jnlp-fixer-site/assets/screenshot-01-before-after.png">
+    <meta property="og:image:alt" content="Before and after example of a legacy iDRAC JNLP filename">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Fix viewer.jnlp(...) Downloads | iDRAC JNLP Fixer">
+    <meta name="twitter:description" content="A local Manifest V3 extension for legacy Dell iDRAC JNLP filenames.">
+    <meta name="twitter:image" content="https://carloscaceres86.github.io/idrac-jnlp-fixer-site/assets/screenshot-01-before-after.png">
+    <title>Fix viewer.jnlp(...) Downloads | iDRAC JNLP Fixer</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "iDRAC JNLP Fixer",
+        "applicationCategory": "BrowserApplication",
+        "description": "A local browser extension that renames legacy Dell iDRAC viewer.jnlp(...) downloads to a usable JNLP filename.",
+        "url": "https://carloscaceres86.github.io/idrac-jnlp-fixer-site/",
+        "image": "https://carloscaceres86.github.io/idrac-jnlp-fixer-site/assets/idrac-jnlp-fixer-logo.png",
+        "softwareVersion": "1.0.0",
+        "isAccessibleForFree": true,
+        "offers": {
+          "@type": "Offer",
+          "price": "2.99",
+          "priceCurrency": "EUR",
+          "url": "https://carloscaceres86.github.io/idrac-jnlp-fixer-site/purchase.html",
+          "availability": "https://schema.org/InStock"
+        },
+        "sameAs": [
+          "https://chromewebstore.google.com/detail/idrac-jnlp-fixer/iemmfodijpapnnbdpbaeaimnkflbcakn"
+        ]
+      }
+    </script>
     <link rel="stylesheet" href="styles.css">
   </head>
   <body data-page="home">
@@ -16,6 +51,7 @@
         <nav class="site-nav" aria-label="Primary navigation">
           <a data-nav="home" href="index.html">Product</a>
           <a href="index.html#how-it-works">How it works</a>
+          <a data-nav="guide" href="guide.html">Guide</a>
           <a data-nav="purchase" href="purchase.html">Purchase</a>
           <a data-nav="support" href="support.html">Support</a>
           <a class="nav-cta button is-disabled" data-checkout-link href="purchase.html" aria-disabled="true"><span data-purchase-label>Purchase link coming soon</span></a>
@@ -55,6 +91,7 @@
         <div class="container">
           <div class="section-heading"><p class="section-label">The one problem it solves</p><h2>Some legacy consoles append session data to the filename.</h2><p>The JNLP content may be fine, but a filename such as <code>viewer.jnlp(...)</code> can stop an existing JNLP association from recognizing it. The extension changes the filename during the download and leaves the file contents alone.</p></div>
           <div class="example-grid" aria-label="Before and after filename example"><div class="example-card bad-card"><p class="label">Before</p><code>viewer.jnlp(192.0.2.10@0@server,+PowerEdge+R710...)</code></div><div class="example-arrow" aria-hidden="true">→</div><div class="example-card good-card"><p class="label">After</p><code>viewer.jnlp</code></div></div>
+          <div class="inline-actions"><a class="button button-secondary" href="guide.html">Read the iDRAC JNLP fix guide</a></div>
         </div>
       </section>
 
@@ -83,7 +120,7 @@
       <section class="section-tight"><div class="container"><div class="support-card"><p class="section-label">Need help?</p><h2>Ask a focused question about a filename or host rule.</h2><p>Support can help separate a rename problem from a Java/OpenWebStart problem. Please do not send passwords, private keys or complete license keys.</p><div class="inline-actions"><a class="button button-primary" data-support-link href="mailto:idracjnlpfixer@proton.me">Email <span data-support-email>idracjnlpfixer@proton.me</span></a><a class="button button-secondary" href="support.html">Troubleshooting</a></div></div></div></section>
     </main>
 
-    <footer class="site-footer"><div class="container footer-inner"><div class="footer-brand"><a class="brand" href="index.html"><img class="brand-mark" src="assets/idrac-jnlp-fixer-logo.png" alt=""><span>iDRAC JNLP Fixer</span></a><p>An independent utility. Not affiliated with Dell Technologies.</p></div><nav class="footer-links" aria-label="Footer navigation"><a href="purchase.html">Purchase</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a><a href="refunds.html">Refunds</a></nav></div><div class="container footer-meta">© <span data-year>2026</span> iDRAC JNLP Fixer · Version <span>0.1.0</span></div></footer>
+    <footer class="site-footer"><div class="container footer-inner"><div class="footer-brand"><a class="brand" href="index.html"><img class="brand-mark" src="assets/idrac-jnlp-fixer-logo.png" alt=""><span>iDRAC JNLP Fixer</span></a><p>An independent utility. Not affiliated with Dell Technologies.</p></div><nav class="footer-links" aria-label="Footer navigation"><a href="guide.html">Guide</a><a href="purchase.html">Purchase</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a><a href="refunds.html">Refunds</a></nav></div><div class="container footer-meta">© <span data-year>2026</span> iDRAC JNLP Fixer · Version <span>1.0.0</span></div></footer>
     <script src="config.js"></script><script src="site.js"></script>
   </body>
 </html>
