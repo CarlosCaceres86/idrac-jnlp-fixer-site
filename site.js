@@ -1,8 +1,16 @@
 (() => {
   const config = window.IDRAC_SITE_CONFIG || {};
-  const checkoutUrl = typeof config.checkoutUrl === "string" && /^https:\/\//.test(config.checkoutUrl)
-    ? config.checkoutUrl
-    : "";
+  let checkoutUrl = "";
+  try {
+    const candidate = new URL(config.checkoutUrl);
+    if (candidate.protocol === "https:"
+      && candidate.hostname.endsWith(".lemonsqueezy.com")
+      && /^\/checkout\/buy\/[^/]+$/.test(candidate.pathname)) {
+      checkoutUrl = candidate.href;
+    }
+  } catch {
+    // Keep purchases unavailable when configuration is missing or invalid.
+  }
   const price = config.price || "€2.99";
   const supportEmail = config.supportEmail || "idracjnlpfixer@proton.me";
 
@@ -38,12 +46,12 @@
 
   document.querySelectorAll("[data-checkout-status]").forEach((element) => {
     element.textContent = checkoutUrl
-      ? "Secure Lemon Squeezy checkout is ready."
-      : "Live checkout is being prepared while the store completes verification.";
+      ? "Pay once through Lemon Squeezy. The checkout shows the final total before payment."
+      : "Purchases are temporarily unavailable. You can still install the free trial or contact support.";
   });
 
   document.querySelectorAll("[data-purchase-label]").forEach((element) => {
-    element.textContent = checkoutUrl ? `Purchase for ${price}` : "Purchase link coming soon";
+    element.textContent = checkoutUrl ? `Buy lifetime — ${price}` : "Purchase temporarily unavailable";
   });
 
   document.querySelectorAll("[data-year]").forEach((element) => {

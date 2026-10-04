@@ -24,7 +24,8 @@
         "@type": "SoftwareApplication",
         "name": "iDRAC JNLP Fixer",
         "applicationCategory": "BrowserApplication",
-        "description": "A local browser extension that renames legacy Dell iDRAC viewer.jnlp(...) downloads to a usable JNLP filename.",
+        "description": "A local browser extension that renames legacy Dell iDRAC viewer.jnlp(...) downloads. Includes 3 free matching renames; unlimited renames require a EUR 2.99 lifetime license.",
+        "downloadUrl": "https://chromewebstore.google.com/detail/idrac-jnlp-fixer/iemmfodijpapnnbdpbaeaimnkflbcakn",
         "url": "https://carloscaceres86.github.io/idrac-jnlp-fixer-site/",
         "image": "https://carloscaceres86.github.io/idrac-jnlp-fixer-site/assets/idrac-jnlp-fixer-logo.png",
         "softwareVersion": "1.0.0",
@@ -54,7 +55,7 @@
           <a data-nav="guide" href="guide.html">Guide</a>
           <a data-nav="purchase" href="purchase.html">Purchase</a>
           <a data-nav="support" href="support.html">Support</a>
-          <a class="nav-cta button is-disabled" data-checkout-link href="purchase.html" aria-disabled="true"><span data-purchase-label>Purchase link coming soon</span></a>
+          <a class="nav-cta button" href="https://chromewebstore.google.com/detail/idrac-jnlp-fixer/iemmfodijpapnnbdpbaeaimnkflbcakn?utm_source=product-site&amp;utm_medium=website&amp;utm_campaign=trial-first-2026-10&amp;utm_content=nav" rel="noopener noreferrer">Install free trial</a>
         </nav>
       </div>
     </header>
@@ -67,10 +68,10 @@
             <h1>Make legacy iDRAC JNLP downloads usable again.</h1>
             <p class="hero-copy">iDRAC JNLP Fixer catches the filename that old Dell PowerEdge consoles generate and changes it to the name your JNLP association expects.</p>
             <div class="hero-actions">
-              <a class="button button-primary is-disabled" data-checkout-link href="purchase.html" aria-disabled="true"><span data-purchase-label>Purchase link coming soon</span></a>
-              <a class="button button-secondary" href="#how-it-works">See how it works</a>
+              <a class="button button-primary" href="https://chromewebstore.google.com/detail/idrac-jnlp-fixer/iemmfodijpapnnbdpbaeaimnkflbcakn?utm_source=product-site&amp;utm_medium=website&amp;utm_campaign=trial-first-2026-10&amp;utm_content=hero" rel="noopener noreferrer">Install free trial</a>
+              <a class="button button-secondary" href="purchase.html">Lifetime license — <span data-price>€2.99</span></a>
             </div>
-            <p class="status-line"><span class="status-dot" aria-hidden="true"></span><span data-checkout-status>Live checkout is being prepared while the store completes verification.</span></p>
+            <p class="status-line"><span class="status-dot" aria-hidden="true"></span><span>Try 3 matching JNLP renames free. Unlimited renames with a one-time <span data-price>€2.99</span> lifetime license.</span></p>
           </div>
 
           <div class="hero-visual" aria-label="Example of the filename correction">
@@ -85,7 +86,7 @@
         </div>
       </section>
 
-      <div class="trust-strip" aria-label="Product facts"><div class="container"><ul class="trust-list"><li><strong>Chromium</strong>Chrome, Edge and Brave</li><li><strong>Manifest V3</strong>Small service worker</li><li><strong>Local by default</strong>No download telemetry</li><li><strong><span data-price>€2.99</span> lifetime</strong>One-time purchase</li></ul></div></div>
+      <div class="trust-strip" aria-label="Product facts"><div class="container"><ul class="trust-list"><li><strong>Chromium</strong>Chrome, Edge and Brave</li><li><strong>3 free fixes</strong>Try your real downloads</li><li><strong>Runs locally</strong>No download telemetry</li><li><strong><span data-price>€2.99</span> lifetime</strong>One-time purchase</li></ul></div></div>
 
       <section class="section" id="problem">
         <div class="container">
@@ -114,7 +115,9 @@
         <details><summary>Which browsers are supported?</summary><p>The extension targets Chromium browsers. The primary QA matrix covers Chrome, Microsoft Edge and Brave, with Windows as the primary QA platform and macOS used for development.</p></details>
         <details><summary>Does it solve every iDRAC problem?</summary><p>No. It only fixes the download filename. TLS, certificates, Java versions, OpenWebStart associations and the legacy console itself are outside the product's scope.</p></details>
         <details><summary>Will it modify ordinary downloads?</summary><p>The matching rules are deliberately conservative. A normal filename such as <code>report.pdf</code> is ignored, and an existing target file is never overwritten by the extension.</p></details>
-        <details><summary>Do I need a subscription?</summary><p>No. The planned license is a one-time <span data-price>€2.99</span> lifetime purchase handled by Lemon Squeezy. The Live checkout link will be enabled after store verification.</p></details>
+        <details><summary>How does the free trial work?</summary><p>Installation includes 3 matching JNLP renames. Ordinary downloads do not use the trial. After the third fix, matching downloads keep their original filename until you activate a license; the download still completes.</p></details>
+        <details><summary>Do I need a subscription?</summary><p>No. A one-time <span data-price>€2.99</span> lifetime license unlocks unlimited renames on up to 3 active browser profiles. Buy through Lemon Squeezy, then paste the license key in the popup and choose Activate. No account is required inside the extension.</p></details>
+        <details><summary>Can I use it on ChromeOS?</summary><p>The extension only renames the downloaded file. Opening a JNLP still requires a compatible Java/OpenWebStart environment. Windows is the primary tested platform; ChromeOS execution of the legacy Java console is not part of our tested coverage.</p></details>
       </div></div></section>
 
       <section class="section-tight"><div class="container"><div class="support-card"><p class="section-label">Need help?</p><h2>Ask a focused question about a filename or host rule.</h2><p>Support can help separate a rename problem from a Java/OpenWebStart problem. Please do not send passwords, private keys or complete license keys.</p><div class="inline-actions"><a class="button button-primary" data-support-link href="mailto:idracjnlpfixer@proton.me">Email <span data-support-email>idracjnlpfixer@proton.me</span></a><a class="button button-secondary" href="support.html">Troubleshooting</a></div></div></div></section>
